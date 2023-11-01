@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 100%;
+    font-family: sans-serif;
+}
+
+div, section, span, ul, li, a, header{
+    box-sizing: border-box;
+}
+
+.element-color-grey{
+    background-color: #DFDFDF;
+}
+
+.element-color-blue{
+    background-color: #2D52D6;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    background-color: white;
+    z-index: 1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+header .logo{
+    width: 175px;
+    height: 170px;
+}
+
+header li{
+    list-style: none;
+    display: inline-block;
+}
+
+header .icon-small{
+    height: 65px;
+    margin-left: 90px;
+    margin-right: 10px;
+}
+
+header .home-button{
+   height: 60px;
+   margin-left: 70px;
+   background-color: transparent;
+   border-radius: 10px;
+}
+
+#home .background{
+    position: inherit;
+    height: 730px;
+    margin-left: 60px;
+}
+
+#home .bcg-logo{
+    position: absolute;
+    width: 70vh;
+    top: 70vh;
+    left: 7%;
+}
+
+#home .small-logos{
+    position: relative;
+    width: 70%;
+    left: 1025px;
+    bottom: 25px;
+}
+
+#home .logo-3{
+    position: relative;
+    bottom: 75px;
+}
+
+.text-1{
+    color: white;
+    position: absolute;
+    top: 25vh;
+    left: 5vh;
+    font-size: 60px;
+    font-weight: 70;
+    width: 750px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: 'Jost';
+  }
+
+#services{
+    position: relative;
+    width: 1300px;
+    height: 100vh;
+    margin-left: 110px;
+    padding-top: 45px;
+}
+
+#services .services-text{
+    display: block;
+    position: absolute;
+    top: 85px;
+    margin-left: 125px;
+}
+
+#services .services-text h1{
+    font-size: 70px;
+    font-family: 'Inter';
+}
+
+#services .services-text p{
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: 'Itim';
+    color: #6e6e6e;
+}
+
+
+
+#services .Services-TOPROW{
+    position: relative;
+    margin-left: 38%;
+    padding-top: 50px;
+    height: 300px;
+}
+
+
+#services .Services-TOPROW li{
+    padding-top: 50px;
+    display: inline-block;
+    width: 275px;
+    height: 275px;
+    margin-left: 80px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+#services .Services-BOTROW{
+    position: relative;
+    margin-top: 70px;
+    margin-left: 2%;
+}
+
+#services .Services-BOTROW li{
+    padding-top: 50px;
+    align-content: center;
+    display: inline-block;
+    width: 275px;
+    height: 275px;
+    margin-left: 75px;
+    margin-top: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#services li img{
+    display: block;
+    height: 95px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+
+#services li p{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Itim';
+    font-size: 25px;
+}
+
+#photos{
+    position: relative;
+    height: 100vh;
+    padding-top: 110px;
+}
+
+#photos .photos-background{
+    position: absolute;
+    background-color: #dfdfdf;
+    width: 90vw;
+    height: 85%;
+    border-radius: 25px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#photos .photos-top-text{
+    font-family: 'Inter';
+    font-size: 200px;
+    margin-left: 550px;
+    margin-top: -100px;
+}
+
+#photos .photos-bot-text{
+    color: #2D52D6;
+    font-family: 'Inter';
+    font-size: 140px;
+    margin-left: 125px;
+    margin-top: 150px;
+}
+
+#photos li{
+    position: absolute;
+    display: inline-block;
+    width: 150px;
+    margin-left: 100px;
+}
+
+#photos .row{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+    position: relative;
+}
+
+.column {
+	float: left;
+    padding-top: 20px;
+    width: 20%;
+    text-align: center;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.column-2{
+	float: left;
+    padding-top: 30px;
+    width: 33.33%;
+    text-align: center;
+}
+
+#photos img{
+    height: 35vh;
+    border-radius: 10px;
+}
+
+#knowledge{
+    position: relative;
+    height: 100vh;
+    padding-top: 130px;
+}
+
+#knowledge h1{
+    font-family: 'Inter';
+    font-size: 50px;
+    margin-left: 250px;
+}
+
+#knowledge .knowledge-box{
+    margin-top: 50px;
+    background-size: cover;
+    background-image: url(Source/Certificate-text-bcgn.png);
+}
+
+
+#knowledge .knowledge-box::after{
+    content: "";
+	display: table;
+	clear: both;
+}
+
+.column-3{
+	float: left;
+    height: 60vh;
+    width: 25%;
+    text-align: center;
+}
+
+#knowledge .column-3 .box-certificate{
+    position: absolute;
+    margin-left: 60px;
+    border-radius: 10px;
+    height: 400px;
+    width: 250px;
+    background-color: #dfdfdfc7;
+}
+
+#knowledge h3{
+    font-family: 'Inter';
+    font-size: 30px;
+    margin-top: 35px;
+}
+
+#knowledge img{
+    height: 130px;
+    max-width: 220px;
+    margin-top: 50px;
+}
+
+#knowledge h5{
+    font-family: 'Inter';
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+#contact{
+    position: relative;
+    height: 100vh;
+    padding-top: 110px;
+}
+
+#contact .cta-bgn{
+    background-color: #2D52D6;
+    border-radius: 25px;
+    width: 90vw;
+    height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#knowledge .cta-bgn::after{
+    content: "";
+	display: table;
+	clear: both;
+}
+
+.column-4{
+	float: left;
+    height: 60vh;
+    width: 50%;
+    text-align: center;
+}
+
+
+
+#contact h1{
+    font-family: 'Jost';
+    font-size: 50px;
+    color: #fff;
+    font-weight: 200;
+    margin-top: 60px;
+
+}
+
+#contact h6{
+    font-family: 'Jost';
+    font-size: 40px;
+    color: #fff;
+    font-weight: 100;
+    margin-bottom: 50px;
+}
+
+#contact p{
+    width: 50vh;
+    position: relative;
+    font-family: 'Jost';
+    font-size: 30px;
+    color: #fff;
+    font-weight: 100;
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+
+#contact .image-parent{
+    position: relative;
+}
+
+#contact .image-parent img{
+    display: block;
+    position: absolute;
+    margin-left: 100px;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon-resize-small{
+    width: 40px;
+    margin-top: 0px;
+}
+
+.socials{
+    margin: 0 30px 0 30px;
+}
+
+#contact .med-cta{
+    background-color: #d9d9d9;
+    color: black;
+    width: 90%;
+    margin-top: 33px;
+    height: 75px;
+    border-radius: 30px;
+    font-family: 'Jost';
+}
+
+#contact .big-cta{
+    background-color: #d9d9d9;
+    color: black;
+    font-family: 'Jost';
+    width: 90%;
+    margin-top: 33px;
+    height: 200px;
+    border-radius: 30px;
+}
+
+#contact .small-cta{
+    background-color: #d9d9d9;
+    width: 30%;
+    margin-top: 25px;
+    margin-right: 5vh;
+    height: 60px;
+    border-radius: 30px;
+    float: right;
+}
