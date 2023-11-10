@@ -64,6 +64,8 @@ header .home-button{
 #home .background{
     position: inherit;
     height: 730px;
+    background-size: cover;
+    width: 90%;
     margin-left: 60px;
 }
 
@@ -90,13 +92,14 @@ header .home-button{
     color: white;
     position: absolute;
     top: 25vh;
-    left: 5vh;
+    left: 10%;
     font-size: 60px;
     font-weight: 70;
-    width: 750px;
+    width: 80%;
+    max-width: fit-content;
     letter-spacing: 2px;
-    text-align: center;
     font-family: 'Jost';
+    align-content: center;
   }
 
 #services{
@@ -256,7 +259,7 @@ header .home-button{
 
 #knowledge{
     position: relative;
-    height: 100vh;
+    height: 90vh;
     padding-top: 130px;
 }
 
@@ -269,6 +272,8 @@ header .home-button{
 #knowledge .knowledge-box{
     margin-top: 50px;
     background-size: cover;
+    width: 100%;
+    height: 65vh;
     background-image: url(Source/Certificate-text-bcgn.png);
 }
 
@@ -280,6 +285,7 @@ header .home-button{
 }
 
 .column-3{
+    margin-top: 5vh;
 	float: left;
     height: 60vh;
     width: 25%;
@@ -288,11 +294,11 @@ header .home-button{
 
 #knowledge .column-3 .box-certificate{
     position: absolute;
-    margin-left: 60px;
+    margin-left: 4vw;
     border-radius: 10px;
     height: 400px;
-    width: 250px;
-    background-color: #dfdfdfc7;
+    width: 18vw;
+    background-color: #dfdfdfdc;
 }
 
 #knowledge h3{
@@ -423,4 +429,3 @@ header .home-button{
     border-radius: 30px;
     float: right;
 }
-
