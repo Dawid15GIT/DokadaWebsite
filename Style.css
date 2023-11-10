@@ -234,7 +234,7 @@ header .home-button{
 
 .column {
 	float: left;
-    padding-top: 20px;
+    padding-top: 2vh;
     width: 20%;
     text-align: center;
 }
@@ -247,7 +247,7 @@ header .home-button{
 
 .column-2{
 	float: left;
-    padding-top: 30px;
+    padding-top: 5vh;
     width: 33.33%;
     text-align: center;
 }
@@ -265,8 +265,8 @@ header .home-button{
 
 #knowledge h1{
     font-family: 'Inter';
-    font-size: 50px;
-    margin-left: 250px;
+    font-size: 3.5vw;
+    margin-left: 15vw;
 }
 
 #knowledge .knowledge-box{
