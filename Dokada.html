@@ -5,7 +5,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Jost&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,13 +19,17 @@
     <section id="home">
         <header>
             <a href="#home"><img class="logo" src="Source/Logo.png" alt=""></a>
-            <ul id="menu">
-                <li><a href="#about"><img class="home-button" src="Source/O NAS- przycisk.png"></a></li>
-                <li><a href="#services"><img class="home-button" src="Source/USŁUGI- przycisk.png"></a></li>
-                <li><a href="#photos"><img class="home-button" src="Source/GALERIA- przycisk.png"></a></li>
-                <li><a href="#knowledge"><img class="home-button" src="Source/WIEDZA- przycisk.png"></a></li>
-                <li><a href="#contact"><img class = "icon-small" src="Source/Słuchawka_IKONA.png"></a></li>
-            </ul>
+            <div class="nav-links">
+                <i class="fa fa-times"></i>
+                <ul id="menu">
+                    <li><a href="#about"><img class="home-button" src="Source/O NAS- przycisk.png"></a></li>
+                    <li><a href="#services"><img class="home-button" src="Source/USŁUGI- przycisk.png"></a></li>
+                    <li><a href="#photos"><img class="home-button" src="Source/GALERIA- przycisk.png"></a></li>
+                    <li><a href="#knowledge"><img class="home-button" src="Source/WIEDZA- przycisk.png"></a></li>
+                    <li><a href="#contact"><img class = "icon-small" src="Source/Słuchawka_IKONA.png"></a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"></i>
         </header>   
         <img class="background">
         <div class="bcg-logo">
@@ -80,31 +87,35 @@
         </div>
 
         <div class="row">
+            <div>
                 <div class="column">
                     <img src="Source/camera-photo.png">
                 </div>
                 <div class="column">
                     <img src="Source/AC-photo.png">
                 </div>
+            </div>
+            <div>
                 <div class="column">
-                    <img src="Source/house-photo.png">
+                    <img  src="Source/house-photo.png">
                 </div>
                 <div class="column">
-                    <img src="Source/cables-photo.jpg">
+                    <img  src="Source/cables-photo.jpg">
                 </div>
+            </div>
                 <div class="column">
-                    <img src="Source/emanuel-vertical-photo.jpg">
+                    <img class="media" src="Source/emanuel-vertical-photo.jpg">
                 </div>
         </div>
         <div class="row">
             <div class="column-2">
-                <img src="Source/FV-photo.png">
+                <img class="media" src="Source/FV-photo.png">
             </div>
             <div class="column-2">
-                <img src="Source/soldering-photo.png">
+                <img class="media" src="Source/soldering-photo.png">
             </div>
             <div class="column-2">
-                <img src="Source/emmanuel-photo.jpg">
+                <img class="media" src="Source/emmanuel-photo.jpg">
             </div>
 </div>
     </section>
@@ -126,14 +137,14 @@
                     <h5>Uprawnienia</br>SEP</h5>
                 </div>
             </div>
-            <div class="column-3">
+            <div class="column-3 media">
                 <div class="box-certificate">
                     <h3>Fotowoltaika</h3>
-                    <img src="Source/L=icence-1.png">
+                    <img clsrc="Source/L=icence-1.png">
                     <h5>Uprawnienia</br>Fotovol</h5>
                 </div>
             </div>
-            <div class="column-3">
+            <div class="column-3 media">
                 <div class="box-certificate">
                     <h3>Klimatyzacja</h3>
                     <img src="Source/F_Gazy.png">
@@ -146,17 +157,17 @@
     <section id="contact">
         <div class="cta-bgn">
             <div class="column-4">
-                <h1>Skontaktuj się z nami!</h1>
-                <h6>Zawsze możesz na nas liczyć</h6>
-                <div class="image-parent">
+                <h1 class="media">Skontaktuj się z nami!</h1>
+                <h6 class="media">Zawsze możesz na nas liczyć</h6>
+                <div class="image-parent media">
                     <img src="Source/localisation-icon.png">
                     <p>Adres: Plebiscytowa 33 </br> 44-266 Świerklany</p>
                 </div>
-                <div class="image-parent">
+                <div class="image-parent media">
                     <img class="icon-resize-small" src="Source/Słuchawka_IKONA.png">
-                <p>Telefon: +48 501 041 527</p>
+                    <p>Telefon: +48 501 041 527</p>
                 </div>
-                <div>
+                <div class="media">
                     <img class="socials" src="Source/facebook-icon.png">
                     <img class="socials" src="Source/twitter-icon.png">
                     <img class="socials" src="Source/instagram-icon.png">
@@ -171,6 +182,13 @@
                 </textarea>
                 <button class="small-cta">
                 </button>
+            </div>
+            <div class="not_media">
+                <img class="icon-resize-small" src="Source/Słuchawka_IKONA.png">
+                <img class="socials" src="Source/localisation-icon.png">
+                <img class="socials" src="Source/facebook-icon.png">
+                <img class="socials" src="Source/twitter-icon.png">
+                <img class="socials" src="Source/instagram-icon.png">
             </div>
         </div>
     </section>

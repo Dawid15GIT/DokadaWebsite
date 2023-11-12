@@ -161,6 +161,26 @@ header .home-button{
         bottom: auto;
         margin-bottom: 30px;
     }
+
+    .nav-links{
+        position: fixed;
+        background: rgb(254, 89, 0);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa{
+        display: block;
+        color: rgb(0, 0, 0);
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
 }
 
   /*----------Services-----------*/
@@ -265,7 +285,7 @@ header .home-button{
         position: relative;
         margin-left: 5vh;
         left: 0;
-        margin-bottom: 10vh;
+        margin-bottom: 15vh;
         /* text-align: center; */
     }
 
@@ -273,6 +293,8 @@ header .home-button{
         margin-left: 0px;
         /* margin-bottom: 0; */
         
+        margin-left: auto;
+        margin-right: auto;
     }
 
     
@@ -300,14 +322,15 @@ header .home-button{
 #photos{
     position: relative;
     height: 100vh;
-    padding-top: 110px;
+    padding-top: 120px;
     margin-top: 5%;
     width: 100%;
 }
 
+/* 
 .position-photos{
     padding-top: 1%;
-}
+} */
 
 #photos .photos-background{
     position: absolute;
@@ -330,11 +353,12 @@ header .home-button{
 }
 
 #photos .photos-bot-text{
+    position: absolute;
     color: #2D52D6;
     font-family: 'Inter';
     font-size: 6vw;
     margin-left: 10vw;
-    margin-top: 15%;
+    bottom: -7.5%;
 }
 /* 
 #photos li{
@@ -376,6 +400,32 @@ header .home-button{
     border-radius: 10px;
 }
 
+@media(max-width: 700px){
+    #photos{
+       height: auto; 
+    }
+
+    #photos .row{
+        margin-left: 10%;
+    }
+    #photos .column{
+        width: 40%;
+        margin: 2.5% 2.5% 2.5% 2.5%;
+    }
+
+    #photos .column img{
+        object-fit: cover; 
+    }
+    
+    .media{
+        display: none;
+    }
+
+    #photos .photos-bot-text{
+        bottom: -1.5%;
+    }
+}
+
 /*----------  KNOWLEDGE  ----------*/
 
 #knowledge{
@@ -392,7 +442,7 @@ header .home-button{
 }
 
 #knowledge .knowledge-box{
-    margin-top: 50px;
+    margin-top: 5vh;
     background-size: cover;
     width: 100%;
     height: 65vh;
@@ -425,7 +475,7 @@ header .home-button{
 
 #knowledge h3{
     font-family: 'Inter';
-    font-size: 2vw;
+    font-size: 3vh;
     margin-top: 10%;
 }
 
@@ -437,11 +487,40 @@ header .home-button{
 
 #knowledge h5{
     font-family: 'Inter';
-    font-size: 1.25vw;
+    font-size: 2vh;
     margin-top: 4vh;
 }
 
-/*---------- CONTACT -----------*/
+@media(max-width: 700px){
+    #knowledge{
+        padding-top: 50px;
+
+    }
+
+    #knowledge .knowledge-box{
+        background-image: none;
+
+    }
+
+    .column-3 .media{
+        display: none;
+    }
+
+    .column-3{
+        margin-top: 0;
+        width: 50%;
+    }
+
+    #knowledge .column-3 .box-certificate{
+        width: 40%;
+    }
+
+    #knowledge img{
+        width: 20vh;
+    }
+}
+
+/*---------- CONTACT -----------*/  
 
 #contact{
     position: relative;
@@ -553,4 +632,51 @@ header .home-button{
     height: 60px;
     border-radius: 30px;
     float: right;
+}
+
+@media(min-width: 700px){
+    .not_media{
+        display: none;
+    }
+}
+
+
+@media(max-width: 700px){
+    #contact{
+        padding-top: 0;
+        margin-top: -110px;
+    }
+
+    .column-4{
+        width: 100%;
+        height: auto;
+        align-items:  center;
+        padding-top: 5px;
+    }
+
+    .socials{
+        margin: 15px 10px 0px 0;
+        width: 10vw;
+    }
+
+    .not_media{
+        margin-left: 20px;
+    }
+
+    .icon-resize-small{
+        margin: 0 10px 0 3vh;
+    }
+
+    #contact .med-cta{
+        width: 90%;
+        margin-top: 5px;
+    }
+    #contact .big-cta{
+        width: 90%;
+        margin-top: 5px;
+    }
+    #contact .small-cta{
+        margin-top: 5px;
+        margin-right: 5%;
+    }
 }
