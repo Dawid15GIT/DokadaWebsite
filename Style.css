@@ -26,7 +26,7 @@ div, section, span, ul, li, a, header{
 
 header{
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 90px;
     display: flex;
     justify-content: space-between;
@@ -61,11 +61,17 @@ header .home-button{
    border-radius: 10px;
 }
 
+#home{
+    width: 100%;
+}
+
 #home .background{
     position: inherit;
     height: 730px;
+    background-image: url(Source/Background_Main.png);
+    /* width: auto; */
     background-size: cover;
-    width: 90%;
+    width: 94%;
     margin-left: 60px;
 }
 
@@ -78,8 +84,8 @@ header .home-button{
 
 #home .small-logos{
     position: relative;
-    width: 70%;
-    left: 1025px;
+    width: 25vw;
+    left: 67vw;
     bottom: 25px;
 }
 
@@ -95,18 +101,77 @@ header .home-button{
     left: 10%;
     font-size: 60px;
     font-weight: 70;
-    width: 80%;
+    /* width: 80%; */
     max-width: fit-content;
     letter-spacing: 2px;
     font-family: 'Jost';
     align-content: center;
   }
 
+@media(max-width: 700px){
+    #home .background{
+        margin-left: 0;
+        left: 0;
+        width: 100%;
+        background-image: url(Source/background.png);
+        background-size: cover;
+    }
+
+    .text-1{
+        font-size: 20px;
+        left: 25%;
+        text-align: center;
+      }
+
+      header .logo{
+        width: 100px;
+        height: auto;
+    }
+
+    header{
+        height: 50px;
+        padding: 10px 10px;
+        width: 100vw;
+    }
+
+    .logo-1{
+        position: relative;
+        height: 20vw;
+        width: auto;
+        bottom: -30px;
+    }
+
+    .bcg-logo{
+        position: absolute;
+        left: 0;
+    }
+
+    #home .small-logos{
+        position: relative;
+        width: 25vw;
+        left: 57vw;
+        bottom: 12vh;
+    }
+
+    #home .logo-2{
+        margin-bottom: 20px;
+    }
+
+    #home .logo-3{
+        bottom: auto;
+        margin-bottom: 30px;
+    }
+}
+
+  /*----------Services-----------*/
+
+
 #services{
     position: relative;
-    width: 1300px;
+    /* display: block; */
+    width: 100%;
     height: 100vh;
-    margin-left: 110px;
+    /* margin-left: 110px; */
     padding-top: 45px;
 }
 
@@ -114,12 +179,13 @@ header .home-button{
     display: block;
     position: absolute;
     top: 85px;
-    margin-left: 125px;
+    margin-left: 17%;
 }
 
 #services .services-text h1{
     font-size: 70px;
     font-family: 'Inter';
+    /* margin-left: 30%; */
 }
 
 #services .services-text p{
@@ -127,9 +193,9 @@ header .home-button{
     font-size: 30px;
     font-family: 'Itim';
     color: #6e6e6e;
+    /* margin-left: 30%; */
+    /* width: 400px; */
 }
-
-
 
 #services .Services-TOPROW{
     position: relative;
@@ -144,7 +210,7 @@ header .home-button{
     display: inline-block;
     width: 275px;
     height: 275px;
-    margin-left: 80px;
+    margin-left: 10%;
     border-radius: 10px;
     text-align: center;
 }
@@ -153,7 +219,7 @@ header .home-button{
 #services .Services-BOTROW{
     position: relative;
     margin-top: 70px;
-    margin-left: 2%;
+    margin-left: 10%;
 }
 
 #services .Services-BOTROW li{
@@ -162,7 +228,7 @@ header .home-button{
     display: inline-block;
     width: 275px;
     height: 275px;
-    margin-left: 75px;
+    margin-left: 80px;
     margin-top: 15px;
     border-radius: 10px;
     text-align: center;
@@ -184,10 +250,63 @@ header .home-button{
     font-size: 25px;
 }
 
+@media(max-width: 700px){
+    #services{
+        height: auto;
+        padding-top: 0;
+    }
+    
+    #services div{
+        position: inherit;
+        display: table;
+    }
+
+    #services .services-text{
+        position: relative;
+        margin-left: 5vh;
+        left: 0;
+        margin-bottom: 10vh;
+        /* text-align: center; */
+    }
+
+    #services .Services-TOPROW{
+        margin-left: 0px;
+        /* margin-bottom: 0; */
+        
+    }
+
+    
+    #services .Services-BOTROW{
+        margin-top: 0;
+        left: 0;
+    }
+
+    #services .Services-TOPROW li{
+        margin-bottom: 7vh;
+    }
+
+    #services .Services-BOTROW li{
+        margin-bottom: 7vh;
+        margin-left: 0;
+    }
+}
+
+
+
+/*----- PHOTOS  ----------*/
+
+
+
 #photos{
     position: relative;
     height: 100vh;
     padding-top: 110px;
+    margin-top: 5%;
+    width: 100%;
+}
+
+.position-photos{
+    padding-top: 1%;
 }
 
 #photos .photos-background{
@@ -205,36 +324,35 @@ header .home-button{
 
 #photos .photos-top-text{
     font-family: 'Inter';
-    font-size: 200px;
-    margin-left: 550px;
-    margin-top: -100px;
+    font-size: 12vw;
+    margin-left: 40vw;
+    margin-top: -7%;
 }
 
 #photos .photos-bot-text{
     color: #2D52D6;
     font-family: 'Inter';
-    font-size: 140px;
-    margin-left: 125px;
-    margin-top: 150px;
+    font-size: 6vw;
+    margin-left: 10vw;
+    margin-top: 15%;
 }
-
+/* 
 #photos li{
     position: absolute;
     display: inline-block;
     width: 150px;
     margin-left: 100px;
-}
+} */
 
 #photos .row{
     margin-left: auto;
     margin-right: auto;
-    width: 90vw;
+    width: 90%;
     position: relative;
 }
 
 .column {
 	float: left;
-    padding-top: 2vh;
     width: 20%;
     text-align: center;
 }
@@ -254,13 +372,17 @@ header .home-button{
 
 #photos img{
     height: 35vh;
+    max-width: 30vw;
     border-radius: 10px;
 }
+
+/*----------  KNOWLEDGE  ----------*/
 
 #knowledge{
     position: relative;
     height: 90vh;
     padding-top: 130px;
+    width: 100%;
 }
 
 #knowledge h1{
@@ -319,10 +441,13 @@ header .home-button{
     margin-top: 4vh;
 }
 
+/*---------- CONTACT -----------*/
+
 #contact{
     position: relative;
     height: 100vh;
     padding-top: 110px;
+    width: 100%;
 }
 
 #contact .cta-bgn{
