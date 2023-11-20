@@ -19,17 +19,17 @@
     <section id="home">
         <header>
             <a href="#home"><img class="logo" src="Source/Logo.png" alt=""></a>
-            <div class="nav-links">
-                <i class="fa fa-times"></i>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times"  onclick="hideMenu()"></i>
                 <ul id="menu">
-                    <li><a href="#about"><img class="home-button" src="Source/O NAS- przycisk.png"></a></li>
-                    <li><a href="#services"><img class="home-button" src="Source/USŁUGI- przycisk.png"></a></li>
-                    <li><a href="#photos"><img class="home-button" src="Source/GALERIA- przycisk.png"></a></li>
-                    <li><a href="#knowledge"><img class="home-button" src="Source/WIEDZA- przycisk.png"></a></li>
-                    <li><a href="#contact"><img class = "icon-small" src="Source/Słuchawka_IKONA.png"></a></li>
+                    <li class="popout"><a href="#about"><img class="home-button" src="Source/O NAS- przycisk.png"></a></li>
+                    <li class="popout"><a href="#services"><img class="home-button" src="Source/USŁUGI- przycisk.png"></a></li>
+                    <li class="popout"><a href="#photos"><img class="home-button" src="Source/GALERIA- przycisk.png"></a></li>
+                    <li class="popout"><a href="#knowledge"><img class="home-button" src="Source/WIEDZA- przycisk.png"></a></li>
+                    <li class="popout"><a href="#contact"><img class = "icon-small" src="Source/Słuchawka_IKONA.png"></a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars"></i>
+            <i class="fa fa-bars"  onclick="showMenu()"></i>
         </header>   
         <img class="background">
         <div class="bcg-logo">
@@ -192,5 +192,6 @@
             </div>
         </div>
     </section>
+    <script src="main.js"></script>
 </body>
 </html>
