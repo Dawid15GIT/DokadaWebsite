@@ -31,6 +31,7 @@
             </div>
             <i class="fa fa-bars"  onclick="showMenu()"></i>
         </header>   
+
         <img class="background">
         <div class="bcg-logo">
         <img class="logo-1" src="Source/KNX img.png"> 
@@ -173,17 +174,13 @@
                     <img class="socials" src="Source/instagram-icon.png">
                 </div>
             </div>
-            <div class="column-4">
-                <textarea placeholder="Imię" class="med-cta">
-                </textarea>
-                <textarea class="med-cta">
-                </textarea>
-                <textarea class="big-cta">
-                </textarea>
-                <button class="small-cta">
-                </button>
-            </div>
-            <div class="not_media">
+            <form class="column-4" action="send-email.php">
+                <input type="text" name="name" id="name" placeholder="Imię" class="med-cta" required>
+                <input type="email" name="email" id="email" placeholder="temat" class="med-cta" required>
+                <input  type="text" name="message" id="message" placeholder="treść" class="big-cta" required>
+                <button class="small-cta"></button>
+            </form>
+            <div method="post" class="not_media" action="send-email.php">
                 <img class="icon-resize-small" src="Source/Słuchawka_IKONA.png">
                 <img class="socials" src="Source/localisation-icon.png">
                 <img class="socials" src="Source/facebook-icon.png">
@@ -192,6 +189,7 @@
             </div>
         </div>
     </section>
+    
     <script src="main.js"></script>
 </body>
 </html>
