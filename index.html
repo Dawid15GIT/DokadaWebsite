@@ -43,7 +43,7 @@
         </div>
         <h1 class="text-1">W ELEKTRYCE <br> OD PONAD 20 LAT</h1>   
     </section>
-
+\-
     <section id="services">
     <div class="xyz">
         <div class="services-text">
@@ -174,7 +174,8 @@
                     <img class="socials" src="Source/instagram-icon.png">
                 </div>
             </div>
-            <form class="column-4" action="send-email.php">
+            <form class="column-4" action="send-email.php" data-netlify="true" data-netlify-honeypot="bot-field">
+                <input class="d-none" name="bot-field">
                 <input type="text" name="name" id="name" placeholder="Imię" class="med-cta" required>
                 <input type="email" name="email" id="email" placeholder="temat" class="med-cta" required>
                 <input  type="text" name="message" id="message" placeholder="treść" class="big-cta" required>

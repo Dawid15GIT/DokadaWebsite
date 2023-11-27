@@ -2,33 +2,63 @@
 
 $name = $_POST["name"];
 $email = $_POST["email"];
-// $subject = $_POST["subject"];
 $message = $_POST["message"];
-
-require"vendor/autoload.php";
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+require './vendor/phpmailer/phpmailer/src/Exception.php';
+require './vendor/phpmailer/phpmailer/src/PHPMailer.php';
+require './vendor/phpmailer/phpmailer/src/SMTP.php';
+
+require 'vendor/autoload.php';
 
 $mail = new PHPMailer(true);
 
-$mail ->isSMTP();
-$mail -> SMTPAuth = true;
+try{
+    
+    //Server settings
+    $mail->isSMTP();
+    $mail->HOST = "smtp.gmail.com";
+    $mail->SMTPAuth = true;
+    $mail->Username = 'Dokada.WEBSITE@gmail.com';
+    $mail->Password = 'wgzh lakl amlj mdmo';
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+    $mail->Port = 465;
 
-$mail ->SMTPDebug = SMTP::DEBUG_SERVER;
+    //Recipients
+    $mail->setFrom($email, $name);
+    $mail->addAddress('Dokada.WEBSITE@gmail.com');
 
-$mail ->Host = "http://smtp.brevo.io";
-$mail ->SMTPSecure = PHPMailer::ENCRYPTION_STARTTTLS;
-$mail ->Port = 587;
+    $mail->isHTML(true);
+    $mail->Subject = 'xyz';
+    $mail->Body = $message;
+    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
-$mail ->Username = "dawid.ciesielski15@gmail.com";
-$mail ->Password = "AgatkaiDawidek160121"
+    $mail->send();
+    echo "Message has been sent";
+}   catch(Exception $e){
+    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+}
 
-$mail ->setFrom($email, $name);
-$mail ->addAddress("strona@dokada.com", "Ciesiel");
+// $mail ->isSMTP();
+// $mail -> SMTPAuth = true;
 
-$mail ->Body = $message;
+// $mail ->SMTPDebug = SMTP::DEBUG_SERVER;
 
-$mail ->send();
+// $mail ->Host = "http://smtp.brevo.io";
+// $mail ->SMTPSecure = PHPMailer::ENCRYPTION_STARTTTLS;
+// $mail ->Port = 587;
 
-echo "email sent";
+// $mail ->Username = "Dokada.WEBSITE@gmail.com;
+// $mail ->Password = "wgzh lakl amlj mdmo";
+
+// $mail ->setFrom($email, $name);
+// $mail ->addAddress("strona@dokada.com", "Ciesiel");
+
+// $mail ->Body = $message;
+
+// $mail ->send();
+
+?>
