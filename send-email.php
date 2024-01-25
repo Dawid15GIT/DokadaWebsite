@@ -20,15 +20,26 @@ try{
     
     //Server settings
     $mail->isSMTP();
+<<<<<<< HEAD
     $mail->Host = "smtp.gmail.com";
     $mail->SMTPAuth = true;
     $mail->Username = 'Dokada.WEBSITE@gmail.com';
     $mail->Password = 'remd jwqi syvg wypm';
+=======
+    $mail->HOST = "smtp.gmail.com";
+    $mail->SMTPAuth = true;
+    $mail->Username = 'Dokada.WEBSITE@gmail.com';
+    $mail->Password = 'wgzh lakl amlj mdmo';
+>>>>>>> 2408a808c82f24fd05a12796f3227db9244a519e
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port = 465;
 
     //Recipients
+<<<<<<< HEAD
     $mail->setFrom("dawid.ciesielski15@gmail.com", "dawid Ciesielski");
+=======
+    $mail->setFrom($email, $name);
+>>>>>>> 2408a808c82f24fd05a12796f3227db9244a519e
     $mail->addAddress('Dokada.WEBSITE@gmail.com');
 
     $mail->isHTML(true);

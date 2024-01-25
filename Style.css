@@ -712,3 +712,7 @@ header .home-button{
     from{-webkit-transform:scale(0)}
     to{-webkit-transform:scale(1)}
 }
+
+.d-none{
+    display: none;
+}
