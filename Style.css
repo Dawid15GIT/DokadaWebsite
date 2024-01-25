@@ -396,6 +396,9 @@ header .home-button{
     text-align: center;
 }
 
+.photo1x1{
+}
+
 .row::after {
 	content: "";
 	display: table;
